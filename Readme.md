@@ -78,6 +78,12 @@ Then open http://localhost:8000/docs to access Swagger UI and test the API endpo
 
 📹 Demo & Screenshots
 Demo video and screenshots :
+https://drive.google.com/file/d/1F4ne17cLwLQ1P35ZbjjChOce_kCuYqG0/view
+![Screenshot (46)](https://github.com/user-attachments/assets/e45565c0-eef4-49f8-a476-c9ad45e027fb)
+![Screenshot (47)](https://github.com/user-attachments/assets/36a09532-7836-4850-8472-73bad101d951)
+![Screenshot (48)](https://github.com/user-attachments/assets/05e1d3eb-f3db-45cc-aa0d-ffeadd221c16)
+![Screenshot (49)](https://github.com/user-attachments/assets/7cf5745b-02b9-41bf-ad25-02af29533677)
+![Screenshot (50)](https://github.com/user-attachments/assets/bf8e085d-4867-414d-bea5-0ee202497604)
 
 
 
