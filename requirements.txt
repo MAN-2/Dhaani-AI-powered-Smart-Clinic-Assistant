@@ -1,0 +1,28 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2 binary
+python dotenv
+# FastAPI + LLM Agent Backend
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+python-dotenv
+requests
+
+# Flask UI
+flask
+jinja2  # For HTML rendering
+
+# PostgreSQL 
+psycopg2-binary
+
+# UUID parsing 
+uuid
+
+# Google Calendar 
+google-api-python-client
+google-auth
+google-auth-httplib2
+google-auth-oauthlib
