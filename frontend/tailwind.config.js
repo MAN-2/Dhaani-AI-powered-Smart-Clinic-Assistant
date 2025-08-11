@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -10,7 +10,7 @@ module.exports = {
         calendas: ["CalendasPlus", "serif"],
       },
       animation: {
-        // pulse-smooth now preserves the translate
+        
         "pulse-smooth": "pulseSmooth 2.5s ease-in-out infinite",
         breathe: "breathe 3s ease-in-out infinite", 
       },
@@ -40,3 +40,4 @@ module.exports = {
   },
   plugins: [],
 };
+
