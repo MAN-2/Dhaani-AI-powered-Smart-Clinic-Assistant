@@ -1,11 +1,7 @@
-# MCP LLM-Based Doctor Appointment & Reporting Assistant (Backend Only)
+## Dhaani: AI Powered Smart Clinical Assistant
+Dhaani is an intelligent doctor dashboard and clinical assistant designed to streamline healthcare professionals’ workflow. It integrates appointment management, patient tracking, and AI-powered natural language assistance to empower modern medical practice.
 
-This project implements a natural language assistant to manage doctor appointments and generate patient visit summaries using FastAPI and LLM agent-based orchestration. It follows the **Model Context Protocol (MCP)** architecture, where an LLM dynamically selects backend tools based on user intent — such as scheduling, conflict resolution, email notifications, and summary generation.
-
----
-
-## 🧠 Key Features
-
+ ## Features
 - CRUD operations on **doctors** and **appointments** using RESTful FastAPI endpoints (Swagger UI enabled).
 - Use **natural language prompts** (via OpenRouter LLM API) to:
   - Book or reschedule appointments
@@ -14,10 +10,68 @@ This project implements a natural language assistant to manage doctor appointmen
   - Send email confirmations
   - Generate Patient Appointment Summary
   
-- Store and track **prompt history** in PostgreSQL
-- Designed for **MCP-style agent tool orchestration**
-- Frontend built with React (currently under development)
 
+- Designed for **MCP-style agent tool orchestration**
+- Frontend built with React 
+
+Doctor Dashboard:
+Manage your patients, appointments, and availability from a clean, intuitive React interface.
+
+## Smart AI Chat Assistant:
+Built-in AI agent that understands natural language commands like “list my patients,” “show today’s schedule,” or “send follow-up email,” and executes corresponding tasks automatically.
+
+Appointment Management:
+Book, reschedule, and cancel appointments easily with automated backend support.
+
+Patient Management:
+View detailed patient records, summaries, and generate comprehensive reports.
+
+Follow-Up Emails:
+Automatically compose and send professional follow-up emails after visits.
+
+Real-Time Interactive UI:
+Features include an availability calendar, upcoming appointments list with detailed tooltips, and a 3D brain visualization background for a modern user experience.
+
+Tech Stack
+Frontend: React, React Router, Tailwind CSS, react-calendar, react-icons , Glb models
+
+Backend: FastAPI, SQLAlchemy, PostgreSQL , Python ,PostgreSQL  , API • Google Calendar API  , SMTP 
+
+AI Services: OpenRouter API for LLM interactions with custom prompt engineering and tool integration
+
+Other: Date-fns for datetime handling
+
+## Installation
+Clone the repository
+
+Install backend dependencies:
+pip install -r requirements.txt
+
+Install frontend dependencies:
+npm install within the frontend folder
+
+Configure environment variables for API keys and database connection
+
+Run backend server:
+uvicorn app.main:app --reload
+
+Run frontend:
+npm start
+
+Usage
+Log in as a doctor to access the dashboard.
+
+Manage your schedule and appointments.
+
+Use the natural language chat assistant to query or command the system — e.g., “List my patients,” or “Reschedule appointment .”
+
+Monitor real-time updates and interact with visual components like the 3D medical brain.
+
+This project implements a natural language assistant to manage doctor appointments and generate patient visit summaries using FastAPI and LLM agent-based orchestration. It follows the **Model Context Protocol (MCP)** architecture, where an LLM dynamically selects backend tools based on user intent — such as scheduling, conflict resolution, email notifications, and summary generation.
+
+---
+
+## 
 ---
 
 ## 💬 Sample Prompt
@@ -89,18 +143,6 @@ https://drive.google.com/file/d/1F4ne17cLwLQ1P35ZbjjChOce_kCuYqG0/view
 
 
 
-🧩 Tech Stack
-FastAPI • LangChain • PostgreSQL • API • Google Calendar API • SMTP • React (upcoming)
 
-📌 Project Status
-Feature	Status
-Appointment Booking	✅ Implemented
-Appointment Deletion	✅ Implemented
-LLM Agent Routing	✅ Implemented
-Prompt History Logging	✅ Implemented
-Google Calendar Link	⚠️ Partial (link not always returned)
-Email Confirmation	✅ Functional
-React Frontend	🚧 In Progress
 
-🙋‍♂️ Author Notes
-This backend was developed independently as part of a technical assignment for an internship evaluation. It allowed me to apply LLM integration, API development, and backend orchestration in a real-world setting. The backend was fully functional at the time of submission; frontend development is currently in progress.
+
