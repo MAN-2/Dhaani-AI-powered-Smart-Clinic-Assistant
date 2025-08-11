@@ -30,20 +30,20 @@ function App() {
           {/* 1. Root → login */}
           <Route path="/" element={<LandingPage />} />
           <Route path="/select-role" element={<RoleSelector/>}/>
-          {/* 2. Public */}
+          
           <Route path="/doctorlogin" element={<DoctorLogin />} />
           <Route path="/register"      element={<Register />} />
 
-          {/* 3. Protected doctor views */}
+          {/* doctor views */}
           <Route path="/doctors"                  element={<DoctorDashboard />} />
           <Route path="/doctors/appointments"     element={<DoctorAppointments />} />
           <Route path="/doctors/patients"         element={<DoctorPatients />} />
           <Route path="/doctors/settings"         element={<DoctorSettings />} />
 
-          {/* 4. Catch‐all → root */}
+         
           <Route path="*" element={<NotFoundPage/>} />
 
-          {/*5 patient */}
+          {/* patient */}
           <Route path="patientlogin"           element={<PatientLogin/>} />
           <Route path="patients" element={< PatientDashboard/>}/>
           <Route path="/patients/bookappointments"  element={<BookAppointments />}/>
@@ -59,7 +59,7 @@ function App() {
           <Route path="patients/doctors" element={<DoctorsPage />} />
           <Route path="/doctors/labs&prescription" element={<LabsAndPrescriptions />} />
           
-          {/* 6. Test */}
+          
         
         </Routes>
       </BrowserRouter>
